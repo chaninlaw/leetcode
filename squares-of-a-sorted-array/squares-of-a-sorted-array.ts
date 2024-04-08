@@ -1,7 +1,3 @@
 function sortedSquares(nums: number[]): number[] {
-    nums.sort((a,b) => Math.abs(a) - Math.abs(b))
-    for (let i = 0; i < nums.length; i++) {
-        nums[i] = Math.pow(nums[i], 2)
-    }
-    return nums
+    return nums.map((n)=>Math.pow(n,2)).sort((a,b)=>a-b)
 };
