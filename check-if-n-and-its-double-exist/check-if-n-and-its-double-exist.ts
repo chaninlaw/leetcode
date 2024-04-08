@@ -3,10 +3,8 @@ function checkIfExist(arr: number[]): boolean {
   
   for (let i = 0; i < arr.length; i++) {
      if (map[2 * arr[i]]) {
-       console.log('1', arr[i])
        return true
      } else if (map[arr[i] / 2]) {
-       console.log('2', arr[i] / 2)
        return arr[i] % 2 === 0
      } else {
        map[arr[i]] = true
