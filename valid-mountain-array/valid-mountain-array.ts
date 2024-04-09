@@ -8,8 +8,6 @@ function validMountainArray(arr: number[]): boolean {
     if (prev === arr[i]) return false
     
     const increasing = prev - arr[i] < 0
-    
-    console.log('increasing', increasing, arr[i])
 
     // first increasing
     if (increasing && isUp === undefined) {
