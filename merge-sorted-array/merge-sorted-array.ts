@@ -3,7 +3,7 @@
  */
 function merge(nums1: number[], m: number, nums2: number[], n: number): void {
     if (m !== 0) {
-        if (m !== nums1.length) {
+        if (nums1.length !== m) {
             nums1.splice(m, nums1.length - 1)
         }
     } else {
@@ -16,7 +16,7 @@ function merge(nums1: number[], m: number, nums2: number[], n: number): void {
     }
     
     if (n !== 0) {
-        if (n !+= nums2.length) {
+        if (nums2.length !== n) {
             nums2.splice(n, nums2.length - 1)
         }
     } else {
