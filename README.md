@@ -1,2 +1,2 @@
-# leetcode
-Collection of LeetCode questions
+# Leetcode
+Collection of data structure and algorithm challenge
